@@ -7,6 +7,7 @@ const App = () => {
     let [path, setPath] = useState("");
     let audioRef = useRef();
     useEffect(() => {
+        console.log("useEffect");
         axios.post("https://texttospeech.googleapis.com/v1beta1/text:synthesize?key=AIzaSyB0q6TpkJJPQeHkFiZqWHfq5LCNNWx6kqk", {
 
             "input":{
